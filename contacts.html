@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="canonical" href="index.html"/>
+</head>
+<body>
+    <!-------------Header+back-call-------------->
+    <div class="back-call">
+        <div class="container">
+            <img src="img/back-call.png" alt="Значок телефона">
+            <a href="#"  onclick="backCall()">Заказать обратный звонок</a>
+        </div>
+    </div>
+    
+        <div class="container">
+            <header>
+                <div class="company">
+                    <img src="img/logo.png" class="logo" alt="Логотип 1С">
+                    <div class="text">
+                        <h2>ООО «Сервис Айти»</h2>
+                        <p>Продажа 1С, обслуживание, внедрение.</p>
+                        <p>Компьютерный аутсорсинг. Автоматизация торговли.</p>
+                    </div>
+                </div>
+                <div class="info">
+                <div class="info-company">
+                    <div class="icon">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="phone">
+                                <a href="tel:+7 (4872) 78-03-06">7 (4872) 78-03-06</a>
+                    </div>
+                </div>
+                <div>  
+                    <p>г. Тула, ул. Революции, д. 39</p>
+                </div>
+                </div>
+                <div class="mail-company">
+                    <a href="mailto:info@1c-v-tule.ru">info@1c-v-tule.ru</a>
+                </div>
+             </header>
+        </div>
+    <!-------------Navigation-------------->
+    <nav class="menu">
+        <ul class="menu__list">
+            <li>
+                <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li>
+                <a href="aboutus.html" class="menu__link">О компании</a>
+            </li>
+            <li>
+                <a href="#" class="menu__link">Клиентам</a>
+            </li>
+            <li>
+                <a href="#" class="menu__link">Специализация</a>
+            </li>
+            <li>
+                <a href="#" class="menu__link">Сопровождение</a>
+                <span class="arrow"></span>
+                <ul class="sub-menu__list">
+                    <li>
+                        <a href="#" class="sub-menu__link">Бесплатная демонстрация</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sub-menu__link">Внедрение 1С</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sub-menu__link">Тарифы на сопровождение</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sub-menu__link">Сервисы 1С</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sub-menu__link">Обмен данных в 1С</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sub-menu__link">Подключение торгового оборудования</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sub-menu__link">Семинары</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="catalog.html" class="menu__link">Каталог</a>
+            </li>
+            <li>
+                <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li>
+                <a href="contacts.html" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+   
+
+
+      
+    
+    <!------------------------Связаться с нами------------------------->
+    <div class="container connect">
+        <div class="connection">
+            <h2>Связаться с нами</h2>
+            <p>Обратиться по общим вопросам поставки, внедрения, адаптации и сопровождения  программ 1С, а также получить консультацию по узким моментам, 
+                связанным с доработкой программы, переносом данных и т.п. можно любым удобным для Вас способом:
+            </p>
+            <div class="info">
+                <img src="img/info.png" alt="">
+                <ul>
+                    <li>по адресу: ул. 25 Сентября, д. 30Б</li>
+                    <li>по телефону <b>7 (4872) 78-03-06</b></li>
+                    <li><a href="#">через электронную форму</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------Footer------------------->
+    <footer>
+        <div class="footer_text">
+            <h4>ООО «Сервис Айти»</h4>
+            <p>Популярные разделы:
+                 <a href="#">Купить 1С</a> |
+                 <a href="#">Сопровождение 1С</a> |
+                 <a href="">Сервисы 1С</a> |
+                 <a href="">Обучение 1С</a> |
+                 <a href="">Обучение 1С</a>| 
+                 <a href="">Акции и спецпредложения</a></p>
+            <p>«Дом сайтов» - <u>создание сайтов</u> и <u>продвижение</u> </p>
+        </div>
+        <img src="img/icon-email.png" alt="">
+        <div class="mini_menu">
+            <p>Популярные разделы:
+                <a href="#">Главная</a> |
+                <a href="#">Контакты</a> |
+                <a href="#">Карта сайта</a> 
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        function backCall() {   
+            let x = prompt('Введите номер телефона','');
+            if(x!=null) {
+                alert('Спасибо, мы вам перезвоним');
+                alert(x);
+            } 
+        }
+    </script>
+    <script src="script.js"></script>
+    </body>
+    </html>
